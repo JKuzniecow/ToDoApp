@@ -10,11 +10,8 @@ while True:
 
     if user_action.startswith("add"):
         todo = user_action[4:]
-
         todos = get_todos()
-
         todos.append(todo + "\n")
-
         write_todos(todos)
 
         print(f"'{todo.capitalize()}' has been added to the list.")
@@ -34,12 +31,9 @@ while True:
         try:
             number = int(user_action[5:])
             number = number - 1
-
             todos = get_todos()
-
             new_todo = input("Enter a new todo: ")
             todos[number] = new_todo + "\n"
-
             write_todos(todos)
 
             print(f"Todo number {number + 1} has been updated.")
@@ -51,12 +45,10 @@ while True:
     elif user_action.startswith("complete"):
         try:
             number = int(user_action[9:])
-
             todos = get_todos()
             index = number - 1
             todo_to_remove = todos[index].strip("\n")
             todos.pop(index)
-
             write_todos(todos)
 
             message = f"Todo '{todo_to_remove.capitalize()}' was removed from the list."
