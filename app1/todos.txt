@@ -1,3 +1,4 @@
-eat pizza
-read a book
+Read a book
 Play the game
+Eat Pizza
+
