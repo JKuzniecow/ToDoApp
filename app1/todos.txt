@@ -1,5 +1,7 @@
 Read a book
 Play the game
 Eat Pizza
-Track expensesPlay later
+Track expenses
+Play later
 Go out in the morning
+
